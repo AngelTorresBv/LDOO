@@ -1,0 +1,102 @@
+<html>	
+	<head> <title> Restaurante DOO </title>
+ <style> 
+            ul{
+                display: block;
+                margin: 0;
+                padding: 0;   
+            }
+            ul li{
+                float: left;
+                display: block;
+            }
+            ul li ul{
+                display: none;
+            }
+            ul li:hover ul{
+                display: block;
+                
+            }
+            ul li:hover ul li{
+                float: none;
+                
+            }
+            ul li a{
+                text-decoration: none;
+                background: gray;
+                color: white;
+                display: block;
+                padding: 20px 90px 15px 90px;
+                margin-top: 1px;
+                margin-left: 1px;
+                
+            }
+            ul li:hover a{
+                background: blue;
+            }
+            h1{
+                color: chartreuse;
+                text-align: center;
+            }
+            h2{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            body{
+		background-image: url("RTAT.jpg");
+            }
+           	
+        </style>	
+<center>	Restaurante DOO	 </center> 
+</head>
+<body>
+<center>
+<p>Usted entro en la p&aacute;gina oficial del restaurante DOO donde podra ordenar diferentes platillos que est&aacute;n disponibles en el siguiente men&uacute; con sus diferentes ingredientes y tiempo de espera.<br> Esperamos que nuestra comida sea de su agrado y nos recomiende para seguir creciendo :) </p>
+<h3> Men&uacute; </h3>
+<table>
+<ul>
+           <li><a href='index.html'>Principal</a></li>
+            <li><a href="">Iniciar</a>
+                <ul>
+                    <li><a href="LoginSer.html">Login</a></li>
+                </ul>
+<br> <br><br> <br><br>  
+</table>
+<h1>REGISTRATE PARA ENTREGAR A TU DOMICILIO</h1>
+</center>
+        <form action="servlet" method="Post"> 
+            <center>
+                <h2>Usuario:</h2>
+            <input type="text" name="usuario">
+            <br>
+            <br>
+            <h2>Correo:</h2>
+            <input type="email" name="correo">
+            <br>
+            <br>
+            <h2>Contraseña: </h2>
+            <input type="password" name="contra">
+            <br>
+            <br> 
+            <h2>En que podriamos mejorar? (opcional)</h2>
+            <textarea>
+
+            </textarea>
+            <br>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+            <input type="hidden" name="accion" value="registrar">
+            </center>
+        </form>
+        <center>
+		<center>
+		<h1> Te esperamos </h1>
+		 <img src="cat.jpg" width="50%" height="50%">
+		 </center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+</center>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>	
+<head>
+    <title> Restaurante DOO  </title>
+ <style> 
+            ul{
+                display: block;
+                margin: 0;
+                padding: 0;   
+            }
+            ul li{
+                float: left;
+                display: block;
+            }
+            ul li ul{
+                display: none;
+            }
+            ul li:hover ul{
+                display: block;
+                
+            }
+            ul li:hover ul li{
+                float: none;
+                
+            }
+            ul li a{
+                text-decoration: none;
+                background: gray;
+                color: white;
+                display: block;
+                padding: 20px 90px 15px 90px;
+                margin-top: 1px;
+                margin-left: 1px;
+                
+            }
+            ul li:hover a{
+                background: blue;
+            }
+            h1{
+                color: chartreuse;
+                text-align: center;
+            }
+            h2{
+                color: white;
+            }
+            p{
+                color: white;
+            }
+            body{
+		background-image: url("RTAT.jpg");
+            }
+           	
+        </style>	
+ 	
+ 
+</head> 
+<body>
+    <center><h1>Restaurante DOO</h1></center>
+<center>
+<p>Usted entro en la p&aacute;gina oficial del restaurante DOO donde podra ordenar diferentes platillos que est&aacute;n disponibles
+ en el siguiente men&uacute; con sus diferentes ingredientes y tiempo de espera.<br> Esperamos que nuestra comida sea de su agrado y nos recomiende para seguir creciendo :) </p>
+<h1>Inicie sesi&oacute;n </h1>
+<form action="servlet" method="Post"> 
+            <center>
+                <h2>Usuario:</h2>
+            <input type="text" name="usuario">
+            <br>
+            <br>
+			 <h2>Contraseña: </h2>
+            <input type="password" name="contra">
+            <br>
+            <br> 
+			 <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+            <input type="hidden" name="accion" value="ingresar">
+            </center>
+        </form>
+        </center>
+		<center>
+		<h1> Te esperamos </h1>
+		 </center>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+		
+</body>
+</html>
+
+
+
